@@ -1,0 +1,14 @@
+com\mycompany\pruebatecnica2\JAXRSConfiguration.class
+com\mycompany\pruebatecnica2\logic\Ciudadano.class
+com\mycompany\pruebatecnica2\logic\Turno.class
+com\mycompany\pruebatecnica2\servlets\SvCiudadano.class
+com\mycompany\pruebatecnica2\persistence\exceptions\PreexistingEntityException.class
+com\mycompany\pruebatecnica2\persistence\TurnoJpaController.class
+com\mycompany\pruebatecnica2\logic\Turno_.class
+com\mycompany\pruebatecnica2\logic\Controller.class
+com\mycompany\pruebatecnica2\persistence\exceptions\IllegalOrphanException.class
+com\mycompany\pruebatecnica2\persistence\PersistenceController.class
+com\mycompany\pruebatecnica2\persistence\CiudadanoJpaController.class
+com\mycompany\pruebatecnica2\persistence\exceptions\NonexistentEntityException.class
+com\mycompany\pruebatecnica2\logic\Ciudadano_.class
+com\mycompany\pruebatecnica2\resources\JavaEE8Resource.class

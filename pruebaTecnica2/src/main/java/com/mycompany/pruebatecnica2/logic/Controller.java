@@ -1,6 +1,7 @@
 package com.mycompany.pruebatecnica2.logic;
 
 import com.mycompany.pruebatecnica2.persistence.PersistenceController;
+import java.util.List;
 
 public class Controller {
 
@@ -17,8 +18,8 @@ public class Controller {
         controlPersis.crearTurno(turno);
     }
 
-    public Ciudadano traerCiudadano(Integer id) {
-        return controlPersis.traerCiudadano(id);
+    public List<Ciudadano> traerCiudadano() {
+        return controlPersis.traerCiudadano();
     }
 
     public Turno traerTurno(Integer id) {

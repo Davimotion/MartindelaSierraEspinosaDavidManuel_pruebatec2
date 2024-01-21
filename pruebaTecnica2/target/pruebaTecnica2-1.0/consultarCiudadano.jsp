@@ -1,4 +1,5 @@
 
+<%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.mycompany.pruebatecnica2.logic.Ciudadano"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,8 +15,8 @@
     <h1>Consultar ciudadano.</h1>  
     <form action="SvCiudadano" method="GET">
         <div class="form-group">
-            <label for="consultaApellido">Consultar apellido</label>
-            <input type="text" name="consultaApellidos" id="consultaApellidos">                
+            <label for="consultaApellido">Lista de ciudadanos</label>
+            <input type="text" name="consultaApellido" id="consultaApellido">                
         </div>
         <button type="submit" class="btn btn-primary" >Buscar</button>            
     </form>
@@ -23,27 +24,27 @@
     <br>
     <br>
 
-    <div class="results-table">
-        <% if (request.getAttribute("resultados") != null) { %>
+<div class="results-table">
+    <% if (request.getAttribute("listaCiudadanos") != null) { %>
         <table class="table">
             <thead>
                 <tr>
                     <th>Nombre</th>
                     <th>Apellido</th>
-                    <th>Telefono</th>
                 </tr>
             </thead>
             <tbody>
-                <% for (Ciudadano ciudadano : (ArrayList<Ciudadano>) request.getAttribute("resultados")) {%>
-                <tr>
-                    <td><%= ciudadano.getNombre()%></td>
-                    <td><%= ciudadano.getApellidos()%></td>
-                </tr>
+                <% for (Ciudadano ciudadano : (List<Ciudadano>) request.getAttribute("listaCiudadanos")) { %>
+                    <tr>
+                        <td><%= ciudadano.getNombre() %></td>
+                        <td><%= ciudadano.getApellidos() %></td>
+                    </tr>
                 <% } %>
             </tbody>                                
         </table>
-        <% }%>
-    </div>
+    <% } %>
+</div>
+
 </div>
 <!-- End of Main Content -->
 
