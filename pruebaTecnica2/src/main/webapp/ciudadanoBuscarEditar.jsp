@@ -1,6 +1,4 @@
 
-<%@page import="java.util.List"%>
-<%@page import="java.util.ArrayList"%>
 <%@page import="com.mycompany.pruebatecnica2.logic.Ciudadano"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="components/header.jsp" %>
@@ -23,3 +21,7 @@
     <br>
     <br>
     <br>
+</div>    
+
+<%@include file="components/footer.jsp" %>
+<%@include file="components/body2.jsp" %>
