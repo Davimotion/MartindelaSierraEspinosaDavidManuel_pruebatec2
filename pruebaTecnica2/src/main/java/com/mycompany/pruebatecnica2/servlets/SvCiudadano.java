@@ -3,13 +3,12 @@ package com.mycompany.pruebatecnica2.servlets;
 import com.mycompany.pruebatecnica2.logic.Ciudadano;
 import com.mycompany.pruebatecnica2.logic.Controller;
 import java.io.IOException;
-import java.util.List;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "SvCiudadano", urlPatterns = {"/SvCiudadano"})
 public class SvCiudadano extends HttpServlet {
@@ -26,7 +25,7 @@ public class SvCiudadano extends HttpServlet {
         String consultaApellido;
         consultaApellido = request.getParameter("consultaApellido");
 
-        List<Ciudadano> listaCiudadanos = control.traerCiudadano();
+        ArrayList<Ciudadano> listaCiudadanos = new ArrayList<Ciudadano>();
 //        listaCiudadanos = control.traerCiudadano();
         for (Ciudadano ciudadano : control.traerCiudadano()) {
             if (ciudadano.getApellidos().equalsIgnoreCase(consultaApellido)) {
@@ -38,7 +37,7 @@ public class SvCiudadano extends HttpServlet {
         request.setAttribute("listaCiudadanos", listaCiudadanos);
 
 //        response.sendRedirect("ListaCiudadanos.jsp");
-        request.getRequestDispatcher("consultarCiudadano.jsp").forward(request, response);
+        request.getRequestDispatcher("ciudadanoConsultar.jsp").forward(request, response);
         System.out.println("HE LLEGADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
     }
 

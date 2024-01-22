@@ -45,10 +45,10 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Gestiones: </h6>
                     <a class="collapse-item" href="ciudadanoRegistrar.jsp">Registrar</a>
-                    <a class="collapse-item" href="consultarCiudadano.jsp">Consultar</a>
+                    <a class="collapse-item" href="ciudadanoConsultar.jsp">Consultar</a>
                     <a class="collapse-item" href="cards.html">Mostrar lista</a>
                     <a class="collapse-item" href="cards.html">Modificar</a>
-                    <a class="collapse-item" href="cards.html">Borrar</a>
+                    <a class="collapse-item" href="ciudadanoEliminar.jsp">Borrar</a>
                 </div>
             </div>
         </li>
