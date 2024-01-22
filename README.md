@@ -4,7 +4,7 @@ Se trata de un sencillo gestor de turnos que permite hacer un CRUD de ciudadanos
 
 ## Funcionalidad
 
-Ciudadanos y turnos tienen una relación @OnetoMany, pero en mi proyecto se les trabaja por separado, aunque se respeta la relación y es visible en la base de datos.
+Ciudadanos y Turnos tienen una relación @OnetoMany, pero en mi proyecto se les trabaja por separado, aunque se respeta la relación y es visible en la base de datos.
 El proyecto tiene una serie de utilidades dadas por servlets como:
 -Añadir registros para ciudadanos y turnos.
 -Hacer búsquedas por Id.
