@@ -6,7 +6,8 @@
 <%@include file="components/body1.jsp" %>
 <%@include file="components/sidebar.jsp" %>
 <%@include file="components/topbar.jsp" %>
-
+<!--Esta página no está terminada, aclaro los motivos en el READ Me, el objetivo era
+mostrar una lista completa de ciudadanos presentes en la base de datos-->
 <!DOCTYPE html>
 
 <!-- Begin Page Content -->

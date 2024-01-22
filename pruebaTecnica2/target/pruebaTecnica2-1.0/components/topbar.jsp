@@ -5,6 +5,7 @@
 <div id="content-wrapper" class="d-flex flex-column">
 
     <!-- Main Content -->
+    <!--La topbar la he vaciado y la he dejado como separador en blanco para una mejor composicion visual-->
     <div id="content">
 
         <!-- Topbar -->

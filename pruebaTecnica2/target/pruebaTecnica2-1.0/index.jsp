@@ -7,9 +7,12 @@
 
 <!DOCTYPE html>
 
-<!-- Begin Page Content -->
-<div class="container-fluid">
+<!--El front de este proyecto está dividido en diferentes capas en la carpeta components
+Esto hace que sea facil crear nuevas páginas que conserven el diseño, simplifica el código y me 
+que los cambios efectuados en esas páginas afecten a todas a las que estén importadas.-->
 
+<div class="container-fluid">
+    <h1>Bienvenido al gestor de turnos.</h1>
 </div>
 <!-- End of Main Content -->
 

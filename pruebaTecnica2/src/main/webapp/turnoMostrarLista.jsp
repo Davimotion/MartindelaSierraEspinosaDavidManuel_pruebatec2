@@ -16,9 +16,21 @@
     <h1>Lista de turnos.</h1>  
     <form action="SvListaTurno" method="GET">
         <div class="form-group">
-        <button type="submit" name="createTableButton">Create Table</button> 
+            <button class="btn btn-primary" type="submit" name="createTableButton">Mostrar ordenado por ID</button> 
         </div>
     </form>
+    <form action="SvListaTurnoFecha" method="GET">
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" name="createTableButton">Mostrar ordenado por fecha</button> 
+        </div>
+    </form>
+    <form action="SvListaTurnoFiltrarFecha" method="GET">
+        <div class="form-group">
+            <label for="start">Filtrar por fecha específica:</label>
+            <input type="date" id="targetDate" name="targetDate" value="" min="2018-01-01" max="2030-12-31" />
+             <button class="btn btn-primary" type="submit" name="createTableButton">Mostrar</button> 
+        </div>
+    </form>    
     <br>
     <br>
     <br>

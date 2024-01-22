@@ -9,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "SvListaTurno", urlPatterns = {"/SvListaTurno"})
 public class SvListaTurno extends HttpServlet {
@@ -20,25 +19,16 @@ public class SvListaTurno extends HttpServlet {
             throws ServletException, IOException {
     }
 
-    
-    
-    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         ArrayList<Turno> listaTurnos = new ArrayList<>();
-        
-//        if ("true".equals(request.getParameter("createTableButton"))) {
-            for (Turno turno : control.traerListaTurno()) {
-                listaTurnos.add(turno);
-            }
-            System.out.println(listaTurnos);
-//        }
 
-//        HttpSession misession = request.getSession();
-
-
+        for (Turno turno : control.traerListaTurno()) {
+            listaTurnos.add(turno);
+        }
+        System.out.println(listaTurnos);
 
         request.setAttribute("listaTurnos", listaTurnos);
         request.getRequestDispatcher("turnoMostrarLista.jsp").forward(request, response);
@@ -46,7 +36,6 @@ public class SvListaTurno extends HttpServlet {
         System.out.println(listaTurnos);
     }
 
-    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

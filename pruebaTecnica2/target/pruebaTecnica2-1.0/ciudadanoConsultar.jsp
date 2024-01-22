@@ -10,6 +10,10 @@
 
 <!DOCTYPE html>
 
+<!--Esta pagina contiene un formulario que pide un apellido y manda el atributo 
+apellido al servlet que hace una petición por controladora y devuelve una lista
+filtrada por el apellido que se le ha pedido-->
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <h1>Consultar ciudadano.</h1>  

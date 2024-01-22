@@ -9,6 +9,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
+        <!--Importo algunos iconos de fontawesome-->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.jsp">
             <div class="sidebar-brand-icon rotate-n-15">                    
                 <i class="fa-solid fa-ticket"></i>
@@ -33,7 +34,8 @@
         <div class="sidebar-heading">
             Gestión
         </div>
-
+        
+        <!--Enlaces a las páginas de gestion de ciudadanos en una lista desplegable-->
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -52,6 +54,7 @@
             </div>
         </li>
 
+        <!--Enlaces a las páginas de gestion de turnos en una lista desplegable-->        
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"

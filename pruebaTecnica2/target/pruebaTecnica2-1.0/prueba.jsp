@@ -1,6 +1,10 @@
 <%@page import="java.util.ArrayList"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<!--    Esta es una clase auxiliar inaccesible excepto por url directa de la que me
+    he valido para probar desde la division por capas del estilo hasta varios 
+    métodos por servlets-->
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

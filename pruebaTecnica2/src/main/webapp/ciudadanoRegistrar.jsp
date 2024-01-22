@@ -6,10 +6,12 @@
 <%@include file="components/topbar.jsp" %>
 
 <!DOCTYPE html>
-
+<!--Esta página contiene un formulario que presenta un formulario 
+para rellenar y luego manda los datos del formulario a un servlet 
+mediante botón, y el servlet después es el que lo manda a
+la controladora siguiendo el modelo de capas.-->
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <!--pegar aqui-->
     <h1>Registrar ciudadano.</h1>
     <form action="SvCiudadano" method="POST">
         <div class="form-group" >
@@ -22,7 +24,6 @@
         </div>
         <button type="submit" class="btn btn-primary"/>Registrar</button>
     </form>
-    <!--fin del pegado-->
 </div>
 <!-- End of Main Content -->
 
