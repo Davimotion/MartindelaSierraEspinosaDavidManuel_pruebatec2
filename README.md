@@ -34,7 +34,8 @@ que dadas las circumstancias estoy bastante orgulloso de mi proyecto, sin embarg
 
  Aun así, estoy contento de mi trabajo y si fuera posible me gustaria modificar el proyecto antes de la corrección, aunque no repercutiese tanto en la nota.
  Un saludo y gracias por tu comprensión.
- David.
+ 
+ -David.
 
  PD: no sé si mi hermano Enrique (tambien en este bootcamp) querrá comunicar algo de esto, pero el tambien ha pasado mucho tiempo estresado y en el hospital, y ha tenido las mismas
  dificultades que yo. Así que extiendo mi petición a el también.
