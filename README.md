@@ -21,7 +21,7 @@ Las capas se encuentran en el directorio components.
 
 ## Nota personal.
 
-Este proyecto ha sido muy duro por circumstancias imprevisibles. El jueves, cuando estaba empezandolo, mi abuela a la que cuido y con quien vivo sufrió una bradicardia y tuvo que
+Este proyecto ha sido muy duro por circumstancias imprevisibles. El miercoles, cuando estaba empezandolo, mi abuela a la que cuido y con quien vivo sufrió una bradicardia y tuvo que
 ser ingresada en el hospital, donde ha sido operada y donde ha permanecido hasta esta misma noche del 22/01/2024. Mi hermano y yo hemos pasado varios dias y noches con ella en el 
 hospital, lo cual ha repertcutido en el tiempo y las energías que podiamos dedicar a esta prueba técnica. Me alegra decir que mi abuela está bien y se recupera favorablemente, y
 que dadas las circumstancias estoy bastante orgulloso de mi proyecto, sin embargo he de mencionar las siguientes carencias:
