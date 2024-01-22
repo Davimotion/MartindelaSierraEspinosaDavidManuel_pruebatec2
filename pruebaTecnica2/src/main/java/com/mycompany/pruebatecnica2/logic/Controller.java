@@ -41,5 +41,9 @@ public class Controller {
     public void editarTurno(Turno turno){
         controlPersis.editarTurno(turno);
     }
+
+    public Ciudadano traerCiudadanoId(int idEditar) {
+        return controlPersis.traerCiudadanoId(idEditar);
+    }
     
 }

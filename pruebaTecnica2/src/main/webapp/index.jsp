@@ -9,27 +9,7 @@
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <h2>Probando main content</h2>
-    <!--pegar aqui-->
-    <div class="container mt-4">
-        <h2>Formulario</h2>
-        <form action="SvPersona" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido">
-            </div>
-            <div class="form-group">
-                <label for="telefono">Telefono:</label>
-                <input type="text" name="telefono" id="telefono">
-            </div>
-            <button type="submit" class="btn btn-primary"/>Enviar</button>
-        </form>
-    </div>
-    <!--fin del pegado-->
+
 </div>
 <!-- End of Main Content -->
 

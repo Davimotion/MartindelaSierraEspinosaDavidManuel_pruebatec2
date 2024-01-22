@@ -62,4 +62,8 @@ public class PersistenceController {
         }
     }
 
+    public Ciudadano traerCiudadanoId(int idEditar) {
+        return ciudaJpa.findCiudadano(idEditar);
+    }
+
 }

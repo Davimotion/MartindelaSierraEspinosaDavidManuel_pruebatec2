@@ -10,20 +10,18 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!--pegar aqui-->
-    <div class="container mt-4">
-        <h2>Registrar ciudadano.</h2>
-        <form action="SvCiudadano" method="POST">
-            <div class="form-group" >
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-            </div>
-            <button type="submit" class="btn btn-primary"/>Registrar</button>
-        </form>
-    </div>
+    <h1>Registrar ciudadano.</h1>
+    <form action="SvCiudadano" method="POST">
+        <div class="form-group" >
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+        </div>
+        <button type="submit" class="btn btn-primary"/>Registrar</button>
+    </form>
     <!--fin del pegado-->
 </div>
 <!-- End of Main Content -->

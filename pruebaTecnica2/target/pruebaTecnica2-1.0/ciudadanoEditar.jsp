@@ -1,4 +1,5 @@
 
+<%@page import="com.mycompany.pruebatecnica2.logic.Ciudadano"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="components/header.jsp" %>
 <%@include file="components/body1.jsp" %>
@@ -9,11 +10,16 @@
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <h1>Ciudadano Eliminado</h1>
-    <form action="SvEditCiudadano" method="POST">
-         <input type="text" name="idElim" id="idElim" placeholder="Id a editar">    
+    <h1>Editar Ciudadano por ID</h1>
+    <%
+        Ciudadano ciudadano = (Ciudadano) request.getSession().getAttribute("ciudEdit");
+    %>
+    <form action="SvEditCiudadano" method="POST">        
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre" value="<%=ciudadano.getNombre()%>">
+         <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" value="<%=ciudadano.getApellidos()%>">
+         <button type="submit">Editar Ciudadano</button>
     </form>
-    <button type="submit">Editar Producto</button>
+    
 </div>
 <!-- End of Main Content -->
 

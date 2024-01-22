@@ -31,6 +31,7 @@ public class SvElimCiudadano extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         int idEliminar = Integer.parseInt(request.getParameter("idElim"));
         control.borrarCiudadano(idEliminar);
         response.sendRedirect("index.jsp");
