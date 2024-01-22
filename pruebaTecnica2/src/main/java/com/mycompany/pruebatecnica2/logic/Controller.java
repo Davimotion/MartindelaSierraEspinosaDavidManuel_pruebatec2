@@ -1,6 +1,7 @@
 package com.mycompany.pruebatecnica2.logic;
 
 import com.mycompany.pruebatecnica2.persistence.PersistenceController;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Controller {
@@ -44,6 +45,12 @@ public class Controller {
 
     public Ciudadano traerCiudadanoId(int idEditar) {
         return controlPersis.traerCiudadanoId(idEditar);
+    }
+
+
+
+    public List<Turno> traerListaTurno() {
+        return controlPersis.traerListaTurno();
     }
     
 }

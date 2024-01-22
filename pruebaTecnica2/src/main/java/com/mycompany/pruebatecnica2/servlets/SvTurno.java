@@ -5,6 +5,7 @@ import com.mycompany.pruebatecnica2.logic.Controller;
 import com.mycompany.pruebatecnica2.logic.Turno;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,7 +24,20 @@ public class SvTurno extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+
+        String inputId = request.getParameter("consultaId");
+        Integer id = Integer.valueOf(inputId);
+
+        Turno turno = control.traerTurno(id);
+
+        ArrayList<Turno> listaTurnos = new ArrayList<Turno>();
+
+        listaTurnos.add(turno);
+
+        request.setAttribute("listaTurnos", listaTurnos);
+
+        request.getRequestDispatcher("turnoConsultar.jsp").forward(request, response);
+        System.out.println("HE LLEGADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
     }
 
     @Override
@@ -38,16 +52,15 @@ public class SvTurno extends HttpServlet {
         boolean espera = Boolean.parseBoolean(inputEspera);
         String inputAtendido = request.getParameter("atendido");
         boolean atendido = Boolean.parseBoolean(inputAtendido);
-        String inputId= request.getParameter("id");
+        String inputId = request.getParameter("id");
         Integer id = Integer.valueOf(inputId);
-                
+
         turno.setFecha(fecha);
         turno.setEspera(espera);
         turno.setAtendido(atendido);
         Ciudadano ciudadano = control.traerCiudadanoId(id);
         turno.setCiudadano(ciudadano);
 
-        System.out.println("servlet" + turno);
         control.crearTurno(turno);
         response.sendRedirect("index.jsp");
 

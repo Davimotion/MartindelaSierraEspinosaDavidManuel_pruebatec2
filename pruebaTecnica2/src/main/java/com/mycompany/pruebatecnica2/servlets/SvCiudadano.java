@@ -26,17 +26,14 @@ public class SvCiudadano extends HttpServlet {
         consultaApellido = request.getParameter("consultaApellido");
 
         ArrayList<Ciudadano> listaCiudadanos = new ArrayList<Ciudadano>();
-//        listaCiudadanos = control.traerCiudadano();
         for (Ciudadano ciudadano : control.traerCiudadano()) {
             if (ciudadano.getApellidos().equalsIgnoreCase(consultaApellido)) {
                 listaCiudadanos.add(ciudadano);
             }
         }
 
-//        HttpSession misession = request.getSession();
         request.setAttribute("listaCiudadanos", listaCiudadanos);
 
-//        response.sendRedirect("ListaCiudadanos.jsp");
         request.getRequestDispatcher("ciudadanoConsultar.jsp").forward(request, response);
         System.out.println("HE LLEGADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
     }

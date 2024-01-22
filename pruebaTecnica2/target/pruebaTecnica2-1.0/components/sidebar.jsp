@@ -64,10 +64,10 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Gestiones: </h6>
                     <a class="collapse-item" href="turnoRegistrar.jsp">Registrar</a>
-                    <a class="collapse-item" href="cards.html">Consultar</a>
-                    <a class="collapse-item" href="cards.html">Mostrar lista</a>
-                    <a class="collapse-item" href="cards.html">Editar</a>
-                    <a class="collapse-item" href="cards.html">Borrar</a>
+                    <a class="collapse-item" href="turnoConsultar.jsp">Consultar</a>
+<!--                    <a class="collapse-item" href="turnoMostrarLista.jsp">Mostrar lista</a>-->
+                    <a class="collapse-item" href="turnoBuscarEditar.jsp">Editar</a>
+                    <a class="collapse-item" href="turnoEliminar.jsp">Borrar</a>
                 </div>
             </div>
         </li>

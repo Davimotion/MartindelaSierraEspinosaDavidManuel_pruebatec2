@@ -1,5 +1,7 @@
 com\mycompany\pruebatecnica2\JAXRSConfiguration.class
 com\mycompany\pruebatecnica2\logic\Ciudadano.class
+com\mycompany\pruebatecnica2\servlets\SvElimTurno.class
+com\mycompany\pruebatecnica2\servlets\SvListaTurno.class
 com\mycompany\pruebatecnica2\logic\Turno.class
 com\mycompany\pruebatecnica2\servlets\SvCiudadano.class
 com\mycompany\pruebatecnica2\persistence\exceptions\PreexistingEntityException.class
@@ -8,6 +10,7 @@ com\mycompany\pruebatecnica2\logic\Turno_.class
 com\mycompany\pruebatecnica2\logic\Controller.class
 com\mycompany\pruebatecnica2\servlets\SvEditCiudadano.class
 com\mycompany\pruebatecnica2\persistence\exceptions\IllegalOrphanException.class
+com\mycompany\pruebatecnica2\servlets\SvEditTurno.class
 com\mycompany\pruebatecnica2\persistence\PersistenceController.class
 com\mycompany\pruebatecnica2\persistence\CiudadanoJpaController.class
 com\mycompany\pruebatecnica2\servlets\SvTurno.class

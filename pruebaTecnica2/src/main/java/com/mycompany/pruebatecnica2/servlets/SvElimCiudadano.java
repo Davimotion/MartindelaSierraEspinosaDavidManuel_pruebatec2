@@ -3,7 +3,6 @@ package com.mycompany.pruebatecnica2.servlets;
 
 import com.mycompany.pruebatecnica2.logic.Controller;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,7 +30,6 @@ public class SvElimCiudadano extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
         int idEliminar = Integer.parseInt(request.getParameter("idElim"));
         control.borrarCiudadano(idEliminar);
         response.sendRedirect("index.jsp");

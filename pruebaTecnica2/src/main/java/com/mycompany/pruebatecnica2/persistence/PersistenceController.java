@@ -3,6 +3,7 @@ package com.mycompany.pruebatecnica2.persistence;
 import com.mycompany.pruebatecnica2.logic.Ciudadano;
 import com.mycompany.pruebatecnica2.logic.Turno;
 import com.mycompany.pruebatecnica2.persistence.exceptions.NonexistentEntityException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -65,5 +66,11 @@ public class PersistenceController {
     public Ciudadano traerCiudadanoId(int idEditar) {
         return ciudaJpa.findCiudadano(idEditar);
     }
+
+    public List<Turno> traerListaTurno() {
+        return turnoJpa.findTurnoEntities();
+    }
+
+
 
 }

@@ -11,9 +11,9 @@
 <div class="container-fluid">
     <h1>Eliminar Ciudadano</h1>
     <form action="SvElimCiudadano" method="POST">
-         <input type="text" name="idElim" id="idElim" placeholder="Id a eliminar">    
+        <input type="text" name="idElim" id="idElim" placeholder="Id a eliminar">    
+        <button type="submit" class="btn btn-primary" >Eliminar Producto</button>
     </form>
-    <button type="submit" class="btn btn-primary" >Eliminar Producto</button>
 </div>
 <!-- End of Main Content -->
 

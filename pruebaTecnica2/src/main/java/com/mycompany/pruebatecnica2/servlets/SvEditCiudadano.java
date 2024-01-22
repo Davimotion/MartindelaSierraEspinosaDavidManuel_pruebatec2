@@ -25,7 +25,6 @@ public class SvEditCiudadano extends HttpServlet {
         int idEditar = Integer.parseInt(request.getParameter("idEdit"));
 
         Ciudadano ciudadano = control.traerCiudadanoId(idEditar);
-        control.traerCiudadanoId(idEditar);
 
         HttpSession misesion = request.getSession();
         misesion.setAttribute("ciudEdit", ciudadano);

@@ -17,7 +17,7 @@
     <form action="SvEditCiudadano" method="POST">        
          <input type="text" id="nombre" name="nombre" placeholder="Nombre" value="<%=ciudadano.getNombre()%>">
          <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" value="<%=ciudadano.getApellidos()%>">
-         <button type="submit">Editar Ciudadano</button>
+         <button type="submit" class="btn btn-primary">Editar Ciudadano</button>
     </form>
     
 </div>

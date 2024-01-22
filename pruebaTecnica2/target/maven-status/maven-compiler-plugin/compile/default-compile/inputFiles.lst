@@ -1,7 +1,9 @@
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\resources\JavaEE8Resource.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\JAXRSConfiguration.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\persistence\PersistenceController.java
+C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\servlets\SvEditTurno.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\persistence\exceptions\PreexistingEntityException.java
+C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\servlets\SvListaTurno.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\persistence\CiudadanoJpaController.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\servlets\SvEditCiudadano.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\logic\Ciudadano.java
@@ -11,5 +13,6 @@ C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycom
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\logic\Controller.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\logic\Turno.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\servlets\SvElimCiudadano.java
+C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\servlets\SvElimTurno.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\persistence\exceptions\NonexistentEntityException.java
 C:\Users\Usuario\Desktop\Prueba Tecnica 2\pruebaTecnica2\src\main\java\com\mycompany\pruebatecnica2\persistence\TurnoJpaController.java
