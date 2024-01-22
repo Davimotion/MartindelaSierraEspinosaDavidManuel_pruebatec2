@@ -1,5 +1,6 @@
 com\mycompany\pruebatecnica2\JAXRSConfiguration.class
 com\mycompany\pruebatecnica2\logic\Ciudadano.class
+com\mycompany\pruebatecnica2\servlets\SvPrueba.class
 com\mycompany\pruebatecnica2\servlets\SvElimTurno.class
 com\mycompany\pruebatecnica2\servlets\SvListaTurno.class
 com\mycompany\pruebatecnica2\logic\Turno.class

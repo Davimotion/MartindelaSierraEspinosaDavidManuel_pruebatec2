@@ -16,23 +16,21 @@
     <h1>Lista de turnos.</h1>  
     <form action="SvListaTurno" method="GET">
         <div class="form-group">
-                           
+        <button type="submit" name="createTableButton">Create Table</button> 
         </div>
-        <input type="button">
-        <button type="submit" class="btn btn-primary" >Mostrar</button>  
-        </input>
     </form>
     <br>
     <br>
     <br>
 
     <div class="results-table">
-        <% if (request.getAttribute("listaTurnos") != null) { %>
+        <% if (request.getParameter("createTableButton") != null && request.getAttribute("listaTurnos") != null) { %>
         <table class="table" border="1">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Ciudadano</th>
+                    <th>Fecha</th>
                     <th>Atendido</th>
                     <th>Espera</th>
                 </tr>
@@ -40,10 +38,11 @@
             <tbody>
                 <% for (Turno turno : (List<Turno>) request.getAttribute("listaTurnos")) {%>
                 <tr>
-                    <td><%= turno.getIdTurno() %></td>
-                    <td><%= turno.getCiudadano() %></td>
-                    <td><%= turno.isAtendido() %></td>
-                    <td><%= turno.isEspera()%></td>                    
+                    <td><%= turno.getIdTurno()%></td>
+                    <td><%= turno.getCiudadano()%></td>
+                    <td><%= turno.getFecha()%></td>
+                    <td><%= turno.isEspera()%></td>
+                    <td><%= turno.isAtendido()%></td>                     
                 </tr>
                 <% } %>
             </tbody>                                

@@ -1,18 +1,39 @@
+<%@page import="java.util.ArrayList"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table Button</title>
+</head>
+<body>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="components/header.jsp" %>
-<%@include file="components/body1.jsp" %>
-<%@include file="components/sidebar.jsp" %>
-<%@include file="components/topbar.jsp" %>
+    <form method="get" action="SvPrueba">
+        <button type="submit" name="createTableButton">Create Table</button>
+    </form>
 
-<!DOCTYPE html>
+    <div id="tableContainer">
+        <%-- Java code to generate the table dynamically --%>
+        <% if (request.getParameter("createTableButton") != null && request.getAttribute("attributeList") != null) { %>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Attributes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% 
+                        ArrayList<String> attributeList = (ArrayList<String>)request.getAttribute("attributeList");
+                        for (String attribute : attributeList) { 
+                    %>
+                        <tr>
+                            <td><%= attribute %></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        <% } %>
+    </div>
 
-<!-- Begin Page Content -->
-<div class="container-fluid">
-   
- 
-</div>
-<!-- End of Main Content -->
-
-<%@include file="components/footer.jsp" %>
-<%@include file="components/body2.jsp" %>
+</body>
+</html>

@@ -65,7 +65,7 @@
                     <h6 class="collapse-header">Gestiones: </h6>
                     <a class="collapse-item" href="turnoRegistrar.jsp">Registrar</a>
                     <a class="collapse-item" href="turnoConsultar.jsp">Consultar</a>
-<!--                    <a class="collapse-item" href="turnoMostrarLista.jsp">Mostrar lista</a>-->
+                    <a class="collapse-item" href="turnoMostrarLista.jsp">Mostrar lista</a>
                     <a class="collapse-item" href="turnoBuscarEditar.jsp">Editar</a>
                     <a class="collapse-item" href="turnoEliminar.jsp">Borrar</a>
                 </div>
