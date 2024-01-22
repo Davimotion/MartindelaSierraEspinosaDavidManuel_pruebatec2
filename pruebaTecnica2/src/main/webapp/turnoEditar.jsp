@@ -21,10 +21,10 @@
         <input type="date" id="fecha" name="fecha" placeholder="<%=turno.getFecha()%> min="2024-01-01" max="2025-12-31" />
 
         <label for="espera">Espera?</label>
-        <input id="espera" name="espera" type="checkbox" attribute="<%=turno.isEspera()%>" />
+        <input type="checkbox" id="espera" name="espera" value="true" />
 
         <label for="atendido">Atendido?</label>
-        <input id="atendido" name="atendido" type="checkbox" attribute="<%=turno.isAtendido()%>" />
+        <input type="checkbox" id="atendido" name="atendido" value="true" />
         <div>
             <button type="submit" class="btn btn-primary">Editar</button>
         </div>

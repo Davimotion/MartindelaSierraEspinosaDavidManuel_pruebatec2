@@ -18,11 +18,11 @@
         </div>
         <div class="form-group">
             <label for="espera">Espera?</label>
-            <input id="espera" name="espera" type="checkbox" />
+            <input type="checkbox" id="espera" name="espera" value="true" />
         </div>
         <div class="form-group">
             <label for="atendido">Atendido?</label>
-            <input id="atendido" name="atendido" type="checkbox" />
+            <input type="checkbox" id="atendido" name="atendido" value="true" />
         </div>
         <div class="form-group">
             <label for="id">ID de ciudadano:</label>

@@ -32,6 +32,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Ciudadano</th>
+                    <th>Fecha</th>
                     <th>Atendido</th>
                     <th>Espera</th>
                 </tr>
@@ -41,8 +42,9 @@
                 <tr>
                     <td><%= turno.getIdTurno() %></td>
                     <td><%= turno.getCiudadano() %></td>
-                    <td><%= turno.isAtendido() %></td>
-                    <td><%= turno.isEspera()%></td>                    
+                    <td><%= turno.getFecha() %></td>
+                    <td><%= turno.isEspera()%></td>
+                    <td><%= turno.isAtendido() %></td>                    
                 </tr>
                 <% } %>
             </tbody>                                

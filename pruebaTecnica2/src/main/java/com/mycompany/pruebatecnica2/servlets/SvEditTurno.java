@@ -1,11 +1,9 @@
 
 package com.mycompany.pruebatecnica2.servlets;
 
-import com.mycompany.pruebatecnica2.logic.Ciudadano;
 import com.mycompany.pruebatecnica2.logic.Controller;
 import com.mycompany.pruebatecnica2.logic.Turno;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.time.LocalDate;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,9 +42,9 @@ public class SvEditTurno extends HttpServlet {
         String inputFecha = request.getParameter("fecha");
         LocalDate fecha = LocalDate.parse(inputFecha);
         String inputEspera = request.getParameter("espera");
-        boolean espera = Boolean.parseBoolean(inputEspera);
+        boolean espera = "true".equals(inputEspera);
         String inputAtendido = request.getParameter("atendido");
-        boolean atendido = Boolean.parseBoolean(inputAtendido);
+        boolean atendido = "true".equals(inputAtendido);
       
 
         

@@ -49,9 +49,9 @@ public class SvTurno extends HttpServlet {
         String inputFecha = request.getParameter("fecha");
         LocalDate fecha = LocalDate.parse(inputFecha);
         String inputEspera = request.getParameter("espera");
-        boolean espera = Boolean.parseBoolean(inputEspera);
+        boolean espera = "true".equals(inputEspera);
         String inputAtendido = request.getParameter("atendido");
-        boolean atendido = Boolean.parseBoolean(inputAtendido);
+        boolean atendido = "true".equals(inputAtendido);
         String inputId = request.getParameter("id");
         Integer id = Integer.valueOf(inputId);
 
